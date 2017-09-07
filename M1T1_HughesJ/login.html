@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title>Bay Pirate Fishing</title>
+<meta charset="utf-8">
+
+<link href="mediaStyles.css" rel="stylesheet" media="all" />
+<link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="loginCSS.css" />
+<link href="responsiveNavMenu.css" rel="stylesheet" />
+</head>
+
+
+
+
+<body>
+		<div id="socialMedia">
+			<a href="https://www.facebook.com/BayPirateFishingTeam/" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/BayPirateFishin" class="fa fa-twitter"></a>
+			<a href="https://www.instagram.com/bay_pirate_fishing_team/" class="fa fa-instagram"></a>
+			
+		</div>
+	<header>
+		<div class="topnav" id="myTopnav">
+		
+				<a class="active" href="login.html">Login</a>
+				
+				<a href="contact.html">Contact</a>
+				
+				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+}
+		</script>	
+		<img src="picts/boatWrap.jpg" alt="boatWrap" />
+	</header>	
+	<h2>Login Form</h2>
+ 
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+<footer>
+ <a href="mailto:joshhughes81@hotmail.com">joshhughes81@hotmail.com</a>
+<br>
+ <i> Copyright &copy; 2017 Bay Pirate Fishing Team</i>
+</footer>
+</body>
+</html>

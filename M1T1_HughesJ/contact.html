@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title>Bay Pirate Fishing</title>
+<meta charset="utf-8">
+
+<link href="mediaStyles.css" rel="stylesheet" media="all" />
+<link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="forms.css" />
+<link href="responsiveNavMenu.css" rel="stylesheet" />
+</head>
+
+
+
+
+<body>
+		<div id="socialMedia">
+			<a href="https://www.facebook.com/BayPirateFishingTeam/" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/BayPirateFishin" class="fa fa-twitter"></a>
+			<a href="https://www.instagram.com/bay_pirate_fishing_team/" class="fa fa-instagram"></a>
+			
+		</div>
+	<header>
+		<div class="topnav" id="myTopnav">
+		
+				<a href="login.html">Login</a>
+				
+				<a class="active" href="contact.html">Contact</a>
+				
+				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+}
+		</script>	
+		<img src="picts/sail.jpg" alt="Sailfish" />
+	</header>	
+
+	
+	
+	
+	<fieldset>	
+	<legend>Customer Information</Legend>
+		<div class="formRow">
+			<label for="name">Name*</label>
+			<input type="text" name="custname" id="name" placeholder="First and Last Name" required/>
+		</div>
+		<div class="formRow">
+			<label for="name">User Name*</label>
+			<input type="text" name="userName" id="userName"/>
+		</div>
+		<div class="formRow">
+			<label for="email">Email*</label>
+			<input type="email" name="custEmail" id="email" placeholder="joesmoe@anywhere.com" required/>
+		</div>
+		<div class="formRow">
+			<label for="name">Password*</label>
+			<input type="password" name="password" id="password" placeholder="**********" required/>
+		</div>
+		<div class="formRow">
+			<label for="name">Password Confirm*</label>
+			<input type="password" name="password" id="password" placeholder="**********" required/>
+		</div>
+		<div class="formRow">
+			<label for="street">Street Address</label>
+			<input type="text" id="street" name="street" />
+		</div>
+		<div class="formRow">
+			<label for="state">State</label>
+			<select name="state" id="state">
+				<optgroup label="Pacific Region">
+					<option value="AK">AK</option>
+					<option value="AZ">AZ</option>
+					<option value="CA">CA</option>
+					<option value="HI">HI</option>
+					<option value="NV">NV</option>
+					<option value="OR">OR</option>
+					<option value="UT">UT</option>
+					<option value="WA">WA</option>
+				</optgroup>
+				<optgroup label="Western Region">
+					<option value="CO">CO</option>
+					<option value="ID">ID</option>
+					<option value="KS">KS</option>
+					<option value="MT">MT</option>
+					<option value="NE">NE</option>
+					<option value="NM">NM</option>
+					<option value="ND">ND</option>
+					<option value="OK">OK</option>
+					<option value="SD">SD</option>
+					<option value="TX">TX</option>
+					<option value="WY">WY</option>
+				</optgroup>
+				<optgroup label="Northern Region">
+					<option value="CT">CT</option>
+					<option value="DE">DE</option>
+					<option value="ME">ME</option>
+					<option value="MD">MD</option>
+					<option value="MA">MA</option>
+					<option value="NH">NH</option>
+					<option value="NJ">NJ</option>
+					<option value="NY">NY</option>
+					<option value="PA">PA</option>
+					<option value="RI">RI</option>
+					<option value="VT">VT</option>
+				</optgroup>
+				<optgroup label="Southern Region">
+					<option value="AL">AL</option>
+					<option value="AR">AR</option>
+					<option value="FL">FL</option>
+					<option value="GA">GA</option>
+					<option value="LA">LA</option>
+					<option value="MS">MS</option>
+					<option value="NC">NC</option>
+					<option value="SC">SC</option>			
+					<option value="TN">TN</option>
+					<option value="VA">VA</option>
+					<option value="WV">WV</option>
+				</optgroup>
+				<optgroup label="Central Region">
+					<option value="IL">IL</option>
+					<option value="IN">IN</option>
+					<option value="IA">IA</option>
+					<option value="KY">KY</option>
+					<option value="MI">MI</option>
+					<option value="MN">MN</option>
+					<option value="MO">MO</option>
+					<option value="OH">OH</option>
+					<option value="WI">WI</option>
+				</optgroup>
+			</select>
+		</div>		
+	
+		<div class="formRow">
+			<label for="zip">Zipcode</label>
+			<input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(-\d{4})?$"/>
+		</div>
+		<div class="formRow">
+			<label for="phone">Phone Number</label>
+			<input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+				pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+		</div>
+		
+	
+		<div class="formRow">
+			<fieldset class="optGroup">
+				<legend>Gender</legend>
+				<label for="male">Male</label>
+				 <input type="radio" name="gender" value="male" id="male" checked>
+				<label for="female">Female</label>
+				 <input type="radio" name="gender" value="female" id="female"> 
+			</fieldset>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Select the species of Fish you would like to see more of</legend>
+			<input type="checkbox" name="KingMackerel" id="KingMack">KingMackerel<br>
+			<input type="checkbox" name="Mahi" id="Mahi">Mahi<br>
+			<input type="checkbox" name="cobia" id="cobia">Cobia<br>
+			<input type="checkbox" name="Wahoo" id="wahoo">Wahoo<br>
+			<input type="checkbox" name="Sailfish" id="Sailfish">Sailfish<br>
+			<input type="checkbox" name="Grouper" id="Grouper">Grouper<br>
+	
+		<div class="formRow">
+			<fieldset class="optGroup">
+			<legend>How did you hear about us?</legend>
+			<select name="infoSrc" size="2" multiple>
+					<option value="Facebook">Facebook</option>
+					<option value="Twitter">Twitter</option>
+					<option value="Instagram">Instagram</option>
+					<option value="Internet">Internet</option>
+					<option value="Other">Other</option>
+			</select>
+			</fieldset>
+		</div>
+		<div class="formRow">
+			<label>Would you recommend this page to anyone?</label>
+			<fieldset class="optGroup">
+				<label for="StronglyAgree">Strongly Agree</label>
+				 <input type="radio" name="Agree" value="5" id="StronglyAgree" />
+				<label for="Agree">Agree</label>
+				 <input type="radio" name="Agree" value="4" id="Agree" />
+				<label for="Neutral">Neutral</label>
+				 <input type="radio" name="Agree" value="3" id="Neutral" />
+				<label for="Disagree">Disagree</label>
+				 <input type="radio" name="Agree" value="2" id="Disagree" />
+				<label for="StronglyDisagree">Strongly Disagree</label>
+				 <input type="radio" name="Agree" value="1" id="StronglyDisagree" />
+			</fieldset>
+		</div>
+		<div class="formRow">
+			<label>Was this webpage easy to read?</label>
+			<fieldset class="optGroup">
+				<label for="fYes">Yes</label>
+				 <input type="radio" name="readability" value="yes" id="redability" />
+				<label for="fNo">No</label>
+				 <input type="radio" name="readability" value="no" id="readability" />
+			</fieldset>
+		</div>
+		<div class="formRow">
+			<label>Will you come back to our page?</label>
+			<fieldset class="optGroup">
+				<label for="fYes">Yes</label>
+				 <input type="radio" name="return" value="yes" id="return" />
+				<label for="fNo">No</label>
+				 <input type="radio" name="return" value="no" id="notreturn" />
+			</fieldset>
+		</div>
+		<div class="formRow">
+			<label>Will you follow us on different social media platforms?</label>
+			<fieldset class="optGroup">
+				<label for="fYes">Yes</label>
+				 <input type="radio" name="follow" value="yes" id="follow" />
+				<label for="fNo">No</label>
+				 <input type="radio" name="follow" value="no" id="noFollow" />
+			</fieldset>
+		</div>
+	</fieldset>	
+ 
+ 
+	<fieldset>
+		<legend>Please leave a comment. </legend>
+			<textarea name="comments" id="commBox" cols="60" rows="3"></textarea>
+	
+			<input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+				<label for="mailCB"> Add me to your mailing list. </label>
+	</fieldset>
+		<div id="buttons">
+			<input type="submit" value="Sign Up">
+			<input type="reset" value="Reset">
+		</div>
+  
+</form> 
+
+
+
+<footer>
+ <a href="mailto:joshhughes81@hotmail.com">joshhughes81@hotmail.com</a>
+<br>
+ <i> Copyright &copy; 2017 Bay Pirate Fishing Team</i>
+</footer>
+</body>
+</html>

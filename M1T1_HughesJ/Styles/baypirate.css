@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* Josh Hughes WEB125 Stylin with CSS
+	CSS page
+	Bay Pirate Fishing Team
+	Filename: baypirate.css
+	*/
+
+
+
+/* Page Body Styles */
+
+body{ margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	max-width: 960px;
+	min-width: 200px;
+	background-image: url(picts/beachSunrise.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: white;
+}
+
+		
+/* Body Header Styles */
+
+header img {
+		width: 100%;
+		padding-top: 5px;
+}
+header iframe{ display: block;
+			width: 75%;
+			padding: 50px 150px;}
+body article img{ display: block;
+			
+			}
+article a{ padding: 25px 50px;
+		}
+
+
+
+body iframe{ display: block;
+			width: 70%;
+			}
+body  img{ display: block;
+			float: left;			
+			height: auto;
+			width: 100%;
+			}
+div img{ display: block;
+		
+		height: 100px;
+		width: 100px;}
+
+div#sponsors{ display: block;
+			padding: 25px;
+			height: 100px;
+			width: 100px;}
+
+#socialMedia a{ 
+			height: 15px;
+			width: 15px;
+			color: white;
+			padding: 5px;
+}
+/* Division Gallery Styles */
+div.gallery{ 
+			margin: 10px;
+			vertical-align:middle;
+			
+			width: 250px;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-flow: row wrap;
+			flex-flow: row wrap;
+}
+
+
+div.gallery img { width: 200px;
+				height: 100px;
+				padding-left: 100px;
+				}
+
+
+div.teamMember img{	display: block;		
+			width: 250px;
+			height: 250px;
+			padding-top: 15px;}
+div.memberName{display: block;
+			font-size:25px;
+			font-weight: 200;
+			color: red;
+			padding-left: 5px;
+			}
+div.memberInfo {display: block;
+			font-size: 20px;
+			font-weight: 100;
+			text-align: left;
+			padding-left: 5px;}
+
+			
+div.ftcc{float: left;}
+div.ftcc img{float: left;
+			width: 300px;
+			height: 300px;
+			padding: 10px;
+}
+
+/* Section left and right styles */
+#left{ display: block;
+			clear: left;
+			float: left;
+			width: 33%;
+			}
+#right { display: block;
+		clear: left;
+			float: left;
+			width: 67%;
+			}
+
+/* Horizontal Navigation Sytles */
+
+nav.horizontal li { display: block;
+				text-align: center;
+}
+nav.horizontal a { display: block;
+				text-align: center;
+}
+
+/* text styles */
+h3   { color: red;  
+	   }
+p::first-of-type {font-size:50%;
+	}
+article{ 
+	color: blue;
+	background-color: white;}
+
+
+/* Navigation styles */
+ul   { 	top: 10px;
+		width: auto;
+		list-style-type: none;
+		overflow: hidden;
+		background-color: #333;
+	}
+
+li   { float: left;
+	}
+
+li a { display: block;
+       color: white;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+     }
+
+li a:hover:not(.active) {
+    background-color: #111;
+      }
+.active{background-color: #FF0000;
+}
+
+/* FEATURE AREA */	
+section#feature_area article {	
+	width: 100%;
+	padding: 10px 0;
+	background: white;
+	border-top:4px solid red;
+	}
+
+/* PROMO AREA */	
+#promo_area  article {
+	float: left;
+	width: 240px;
+	padding: 10px 0;
+	border-top: 4px solid black;
+	background: white;
+	}
+#promo_area article .inner {
+	padding: 5px;
+	background: #e5e8ed;
+	}
+#promo_area iframe{ float: left;
+display: block;}
+
+/* Table Styles */
+#tournaments {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#tournaments caption{font-size:25px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				color: black;
+}
+#tournaments td, #tournaments th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tournaments tr:nth-child(even){background-color: black;}
+#tournaments tr:nth-child(odd){background-color:grey;}
+#tournaments tr:hover {background-color: blue;}
+
+#tournaments th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+/* footer styles */
+footer { width: 100%;
+   background-color: rgb(50, 50 ,50);
+   clear: left;
+   margin-top: 25px;
+   text-align: center;
+}
+
+footer a {
+   padding: 10px;
+   color: rgb(255, 0, 0);
+}
+
+footer a:hover {
+   color: rgb(0, 167, 167);
+   text-decoration: underline;
+}
