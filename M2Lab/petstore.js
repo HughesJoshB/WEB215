@@ -1,4 +1,5 @@
-
+// Josh Hughes
+// Sept 21, 2017
 /**
  * This function should calculate the total amount of pet food that should be
  * ordered for the upcoming week.
