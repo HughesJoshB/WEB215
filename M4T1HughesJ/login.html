@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Login page</title>
+  
+  <link rel='stylesheet' href='./Styles/bootstrap.css' />
+  <style>
+	boody, html{ height: 100%;
+				margin: 0;
+				}
+	body { background-image:url("fallSunRise.jpg");
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	<!--img { opacity:0.5;
+		filter: alpha(opacity=50);
+		}-->
+	</style>
+</head>
+
+<body>
+
+<form>
+  
+	<div class="container">
+	<div class="col-xs-12 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
+		<img src="logo2.png" class="img-responsive" >
+		<h2><font color="red">Login Form</font></h2>
+		
+			<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+				<input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+				<input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
+			</div>
+			<br>
+			<div class="btn btn-success">
+				<label><input type="checkbox" checked="checked"><font color="red"> Remember me</font></label>
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+			<button type="button" class="btn btn-cancelbtn">Cancel</button>
+			<div class="btn btn-link">
+				<span class="psw"><font color="red">Forgot</font> <a href="#">password?</a></span>
+			</div>
+			
+		</div>
+	</div>
+</form>
+  <!--scripts go at bottom of body-->
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <!--<script src='./Scripts/jquery-2.1.4.min.js'></script>--->
+  <script src='./Scripts/bootstrap.min.js'></script>
+</body>
+	
+</html>
