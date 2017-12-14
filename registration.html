@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Registration Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="./Styles/Slate/bootstrap.css" rel="stylesheet" />
+	<link href="./Styles/responsiveNavMenu.css" rel="stylesheet" />
+  
+  <style>
+  boody, html{ height: 100%;
+				margin: 0;
+				}
+	body { background-image:url("weighInRumble.jpg");
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	img{display: block;
+		margin: auto;
+		width:50%;
+		}
+	</style>
+</head>
+
+<body>
+<img src="./picts/logo2.png" class="img-responsive">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+		<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Team<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+			<li><a href="home.html">About Us</a></li>
+            <li><a href="team_members.html">Team Members</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tournaments<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="tournaments.html">Current Year</a></li>
+            <li><a href="previous_results.html">Previous Results</a></li>
+          </ul>
+        </li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="pictures_videos.html">Media</a></li>
+		
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="registration.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      
+	  
+		<li><a href="https://www.facebook.com/BayPirateFishingTeam/" class="fa fa-facebook"></a></li>
+		<li><a href="https://twitter.com/BayPirateFishin" class="fa fa-twitter"></a></li>
+		<li><a href="https://www.instagram.com/bay_pirate_fishing_team/" class="fa fa-instagram"></a></li>
+		</ul>
+    </div>
+  </div>
+</nav>
+
+<form class="horizontal-form">
+	<div class="container">
+	 <div class="form-group col-xs-12 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
+		<div class="alert alert-success alert-dismissable">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+			<strong>Click submit to continue!</strong> 
+		</div>
+		
+		<div class="alert alert-danger alert-dismissable">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+			<strong>Please fix the highlighted errors</strong>
+		</div>
+	 </div>
+	</div>
+	
+	<div class="container">
+	<div class="form-group col-xs-12 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
+		<h2><font color="red">Registration Form</font></h2>
+		
+			<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+				<input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+				<input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
+			</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+				<input type="password" class="form-control" placeholder="Confirm Password" name="psw" required>
+			</div>
+			<br>
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="First Name" name="FirstName">
+			</div>
+			<br>
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Last Name" name="LastName">
+			</div>
+			<br>
+			<button type="button" class="btn btn-primary">Free Account</button>
+			<button type="button" class="btn btn-info">Silver Account</button>
+			<button type="button" class="btn btn-danger">Gold Account</button>
+			<br>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+				<input type="text" class="form-control" placeholder="Username">
+			</div>
+			<br>
+			<button type="submit" class="btn btn-default">Submit</button>
+			<button type="button" class="btn btn-clearbtn">Clear</button>		
+	</div>	
+	</div>
+
+	<!--<div class="container">
+	 <div class="form-group col-xs-12 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
+		<div class="alert alert-success alert-dismissable">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+			<strong>Click submit to continue!</strong> 
+		</div>
+		
+		<div class="alert alert-danger alert-dismissable">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+			<strong>Please fix the highlighted errors</strong>
+		</div>
+	 </div>
+	</div>
+	-->
+
+
+</form>
+<footer class="container-fluid bg-4 text-center">
+		<a href="mailto:joshhughes81@hotmail.com">joshhughes81@hotmail.com</a>
+		<i> Copyright&nbsp;&copy;&nbsp;2017&nbsp;Bay&nbsp;Pirate&nbsp;Fishing&nbsp;Team</i>
+	</footer>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106865404-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-106865404-1');
+</script>
+  <!--scripts go at bottom of body-->
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src='./Scripts/jquery-3.2.1.min.js'></script>
+  <script src='./Scripts/bootstrap.min.js'></script>
+  <script src='./Scripts/main.js'></script>
+</body>
+</html>
+	
+</html>
