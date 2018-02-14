@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/*
+   
+   Author:   Joshua Hughes
+   Date:     March 6th, 2017
+   
+   Filename: mediaStyles.css
+
+   This file contains the layout styles and media
+   queries used for Bay Pirate HTML.
+
+*/
+
+
+
+/* Import Design Styles */
+
+
+/*Flex Layout Styles */
+body {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+article{ -webkit-flex: 3 1 341px;
+	flex: 3 1 341px;	
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+section#feature_area article{
+	-webkit-flex: 3 1 361px;
+	flex: 3 1 361px;
+}
+section#promo_area  article{ display: -webkit-flex;
+					display: flex;
+					-webkit-flex-flow: row wrap;
+					flex-flow: row wrap;
+}
+
+					
+/* =============================
+	Mobile Styles: 0 - 480 pixels
+   =============================
+*/
+@media only screen and (max-width: 480px){
+	nav{	-webkit-order:99;
+		order: 99;
+	}
+	a#navicon {
+      display: inline-block;
+	  
+   }
+   header nav {
+      padding-bottom: 5px;
+   }
+   header nav ul {
+      display: none;
+   }
+   header nav ul li {
+      font-size: 1em;
+      line-height: 1.3em;
+      height: 1.3em;
+   }
+	a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+	  
+	  
+   }
+	header img{width: 100%;}
+	
+	div.memberInfo{background-color: white;
+				color: black;}
+}
+	
+	
+
+	
+/* =================================================
+	Tablet and Desktop Styles: 481 pixels and greater
+   =================================================
+*/
+@media only screen and (min-width: 481px){
+	nav {-webkit-order: 99;
+		order: 99;}
+	a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+   }
+	nav.horizontal ul {display: -webkit-flex;
+					display: flex;
+					-webkit-flex-flow: row nowrap;
+					flex-flow: row nowrap;
+	}
+	nav.horizontal  li{-webkit-flex: 0 1 auto;
+					flex: 1 1 auto;}
+	a:hover+ul, nav.horizontal ul:hover{ display: block;
+	}
+	
+
+}
